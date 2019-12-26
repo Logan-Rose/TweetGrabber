@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/ellipse"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tweetContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ellipse"
+            android:padding="7dp"
+            android:text="Tweet" />
+
+        <TextView
+            android:id="@+id/tweetStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stats"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tweetDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date" />
+
+    </LinearLayout>
+</LinearLayout>
