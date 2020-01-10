@@ -26,14 +26,10 @@ public class TweetList extends ArrayAdapter<Tweet> {
 
 
         TextView textViewContent = /*(TextView)*/ listViewItem.findViewById(R.id.tweetContent);
-        TextView textViewStats = /*(TextView)*/ listViewItem.findViewById(R.id.tweetStats);
-        TextView textViewDate = /*(TextView)*/ listViewItem.findViewById(R.id.tweetDate);
 
         Tweet tweet = tweets.get(position);
 
         textViewContent.setText(tweet.getContent());
-        textViewStats.setText(tweet.getStats());
-        textViewDate.setText(tweet.getDate());
         return listViewItem;
     }
 }

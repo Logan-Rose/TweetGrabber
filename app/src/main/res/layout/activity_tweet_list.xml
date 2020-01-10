@@ -15,22 +15,8 @@
             android:id="@+id/tweetContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/ellipse"
             android:padding="7dp"
             android:text="Tweet" />
-
-        <TextView
-            android:id="@+id/tweetStats"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Stats"
-            android:textSize="11sp" />
-
-        <TextView
-            android:id="@+id/tweetDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Date" />
 
     </LinearLayout>
 </LinearLayout>

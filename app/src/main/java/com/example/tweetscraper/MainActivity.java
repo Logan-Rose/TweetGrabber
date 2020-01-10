@@ -70,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
         try {
             test = Jsoup.connect("http://www.twitter.com/" + userHandle).get();
             String title = test.title();
+            System.out.println("--------------");
+            System.out.println(title);
+            System.out.println("--------------");
             String name = title.split("@")[0];
             name = name.substring(0, name.length()-2);
             System.out.println(name);
@@ -84,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             String[] splitTweet;
             System.out.println("--------------------------------------");
             ArrayList<Tweet> tweetObjects = new ArrayList<Tweet>();
-            for(int i = 1; i <tweets.length;i++){
+            for(int i = 1; i <tweets.length -1;i++){
                 Tweet currentTweet = new Tweet(tweets[i]);
                 tweetObjects.add(currentTweet);
                 System.out.println(currentTweet);
